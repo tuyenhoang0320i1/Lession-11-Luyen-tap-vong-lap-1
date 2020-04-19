@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8: Đoán số</title>
+</head>
+<body>
+<button onclick="Start();">Play Game</button>
+<script>
+    function Start() {
+        debugger
+        let numStart = +prompt("Nhập số bắt đầu dãy:");
+        let numEnd = +prompt("Nhập số kết thúc dãy:");
+        let numRandom = Math.floor(Math.random() + (numEnd + numStart )/2 );
+        while (1) {
+            let numSelect = +prompt("Nhập số bạn dự đoán:");
+            if (numSelect < numRandom) {
+                alert('Hãy chọn số khác lớn hơn để qua Game!');
+            } else if (numSelect > numRandom) {
+                alert('Hãy chọn số khác nhỏ hơn để qua Game!');
+            } else {
+                alert('You Win!');
+                break;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

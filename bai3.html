@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Hiển thị ra 20 số trong dãy fibonacci</title>
+</head>
+<body>
+<script>
+
+    function displayFiboList(quantity) {
+        debugger
+        let st1 = 0;
+        let st2 = 1;
+        let count = 2;
+        document.write(" Day so Fibonaci: " + st1 + " " + st2);
+        while (count < quantity) {
+            let st3 = st1 + st2;
+            document.write(" " + st3);
+            count++;
+            st1 = st2;
+            st2 = st3;
+        }
+    }
+    let number = +prompt(" So luong so Fibo: ");
+    displayFiboList(number);
+</script>
+</body>
+=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,4 +52,5 @@
     displayFiboList(number);
 </script>
 </body>
+>>>>>>> 1b58bb16ec46acd3a9752b5b7fdd0d19a1f179ad
 </html>

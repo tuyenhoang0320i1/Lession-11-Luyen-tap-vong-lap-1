@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.</title>
+</head>
+<body>
+<script>
+    function displayFiboList(quantity) {
+        let st1 = 0;
+        let st2 = 1;
+        let count = 2;
+        document.write(" Day so Fibo la: " + st1 + " " + st2);
+        while (count < quantity) {
+            let st3 = st1 + st2;
+            document.write(" " + st3);
+            count++;
+            st1 = st2;
+            st2 = st3;
+        }
+    }
+
+    let number = +prompt("Nhap vao so luong so Fibo de tinh: ");
+    displayFiboList(number);
+
+    function displayDivision(quantity) {
+        let num;
+        for (num = 1; num < quantity; num++) {
+            if (num % 5 == 0) {
+                document.write("<br/>" + " So Fibo dau tien chia het cho 5 la: " + num);
+                break;
+            }
+        }
+    }
+
+    displayDivision(number);
+</script>
+</body>
+</html>
